@@ -10,7 +10,7 @@ if(isset($_POST['action']) && $_POST['action'] == 'register') {
 elseif(isset($_POST['action']) && $_POST['action'] == 'login') {
   login_user($_POST);
 
-} else{ //malicious nav to process.php or someone trying to logg ocilogoff
+} else{ //malicious nav to process.php or someone trying to log off
   session_destroy();
   header('Location: index.php');
   die();

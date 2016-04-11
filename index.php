@@ -32,6 +32,7 @@ if(isset($_SESSION['success_message'])) {
   <h1>Welcome!</h1>
   <h2>Register</h2>
     <form class="pure-form pure-form-aligned" action="process.php" method="post">
+      
       <input type="hidden" name="action" value="register">
         <div class="pure-control-group">
             <label for="first_name">First name</label>
